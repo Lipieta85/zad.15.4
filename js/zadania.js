@@ -8,7 +8,7 @@ zmienna4()
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-const multiply = (x = '1', y = '1') => x * y
+const multiply = (x = 1, y = 1) => x * y
 console.log(multiply(5))
 console.log(multiply(6, 6))
 
