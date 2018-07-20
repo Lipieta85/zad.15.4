@@ -1,14 +1,14 @@
-const zmienna1 = `Hello`;
-const zmienna2 = `World`;
-const zmienna3 = (`${zmienna1} ${zmienna2}`)
+const zmienna1 = 'Hello';
+const zmienna2 = 'World';
+const zmienna3 = `${zmienna1} ${zmienna2}`
 console.log(zmienna3)
 
-const zmienna4 = (zmienna1 = `Hello`, zmienna2 = `World`) => console.log(`${zmienna1} ${zmienna2}`)
+const zmienna4 = (zmienna1 = 'Hello', zmienna2 = 'World') => console.log(`${zmienna1} ${zmienna2}`)
 zmienna4()
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-const multiply = (x = `1`, y = `1`) => x * y
+const multiply = (x = '1', y = '1') => x * y
 console.log(multiply(5))
 console.log(multiply(6, 6))
 
@@ -19,7 +19,7 @@ const average = (...args) => {
 	args.forEach(arg  => {
 		sum += arg;
 	});
-	return (`Średnia: ${sum/args.length}`);
+	return `Średnia: ${sum/args.length}`;
 };
 
 console.log(average(1,2,4));
